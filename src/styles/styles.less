@@ -1,0 +1,48 @@
+//@import url('https://fonts.googleapis.com/css?family=Roboto+Serif:600.css');
+
+@import 'colors.less';
+
+#app-root-2024-plastic_substitutes .app {
+  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto auto;
+  max-width: 700px;
+  .chart_container {
+    margin: 40px 5px;
+    min-height: 650px;
+    .chart {
+      opacity: 0;
+      transition-duration: 500ms;
+      transition-property: opacity;
+      .tooltip_container {
+        .tooltip_header {
+          color: #000;
+          display: block;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 22px;
+          margin: 0 0 5px 0;
+        }
+        .tooltip_label {
+          display: block;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 20px;
+        }
+        .tooltip_value {
+          display: block;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 20px;
+          margin-bottom: 5px;
+        }
+      }
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@import 'basics.less';
