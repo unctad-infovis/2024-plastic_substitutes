@@ -45,7 +45,7 @@ Highcharts.SVGRenderer.prototype.symbols.download = (x, y, w, h) => {
 };
 
 function TreemapChart({
-  allow_decimals, data, idx, note, show_first_label, source, subtitle, title
+  allow_decimals = true, data, idx, note = false, show_first_label = true, source, subtitle = false, title
 }) {
   const chartRef = useRef();
   const isVisible = useIsVisible(chartRef, { once: true });
@@ -342,13 +342,6 @@ TreemapChart.propTypes = {
   source: PropTypes.string.isRequired,
   subtitle: PropTypes.string,
   title: PropTypes.string.isRequired,
-};
-
-TreemapChart.defaultProps = {
-  allow_decimals: true,
-  note: false,
-  show_first_label: true,
-  subtitle: false,
 };
 
 export default TreemapChart;
